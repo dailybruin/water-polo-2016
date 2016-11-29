@@ -257,6 +257,9 @@ header h1 {
 .cd-timeline-content h2 {
   color: #303e49;
 }
+.cd-timeline-content img {
+  padding: 1em;
+}
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
