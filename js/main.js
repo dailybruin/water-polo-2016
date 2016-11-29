@@ -1,4 +1,6 @@
 jQuery(document).ready(function($){
+	// source file is https://docs.google.com/spreadsheets/d/13Hpv0NLNMfiqWfA1kXzBjioYD5oVXSN5frzBAwnsuBw/edit#gid=0
+
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 
