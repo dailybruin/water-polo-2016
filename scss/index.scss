@@ -1,0 +1,112 @@
+$tick-gap: 15px;
+$scouting-background: white; 
+$tick-radius: 17.68px;
+
+
+* {
+	box-sizing: border-box; 
+}
+
+html {
+	font-family: sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+p, h3, h2 {
+	margin: 0;
+}
+
+.content-wrapper {
+	width: 767px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+
+	#bracket {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#scouting {
+		position: relative;
+		height: 300px;
+		width: 100%;
+		#scouting-sidebar {
+			position: relative;
+			overflow: scroll;
+			display: inline-block;
+			float: left;
+			height: 100%;
+			width: 30%;
+
+			li.school-wrapper {
+				div.tick {
+					width: 25px;
+					height: 25px;
+					position: absolute;
+					background: gray;
+					
+					margin: 0;
+					transform: rotate(45deg); // TODO vendorize this
+					top: calc(50% - #{$tick-radius});
+					left: calc(100% - #{$tick-gap} - #{$tick-radius});
+
+				}
+
+				position: relative;
+				cursor: pointer;
+				background: $scouting-background;
+				height: 60px;
+				padding-right: $tick-gap;
+				div.school {
+					background: whitesmoke;
+					border-bottom: 2px solid gray;
+					height: 100%;
+					padding: 10px;
+					h3 {
+					
+						text-transform: uppercase;
+						span.rank {
+							color: gray;
+						}
+					}
+
+					
+				}
+				div.info {
+					display: none;
+				}
+				div.school.active {
+					background: gray;
+					h3 {
+						color: white;
+						span.rank {
+							color: whitesmoke;
+						}
+					}
+				}
+			}
+	
+			
+
+		}
+
+		#scouting-description {
+			padding: 20px;
+			overflow: scroll;
+			display: inline-block;
+			float: right;
+			height: 100%;
+			width: 70%;
+
+
+		}
+	}
+}

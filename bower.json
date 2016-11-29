@@ -1,0 +1,17 @@
+{
+  "name": "water-polo-2016",
+  "homepage": "https://github.com/daily-bruin/water-polo-2016",
+  "authors": [
+    "Chang Liu <shampliu@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
