@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
             console.log(data);
             console.log(data[0].id.$t);
             ko.applyBindings({
-                events: ko.observableArray(data)
+                events: data
             });
         }
     };
