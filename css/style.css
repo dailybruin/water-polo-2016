@@ -31,7 +31,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2 {
+h1, h2, .cd-date{
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -83,6 +83,10 @@ header h1 {
     font-size: 24px;
     font-size: 1.5rem;
   }
+}
+
+.cd-date {
+  color: darkslategray;
 }
 
 #cd-timeline {
@@ -315,7 +319,7 @@ header h1 {
     font-size: 1rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
+    font-size: 18px;
     font-size: 0.875rem;
   }
 }
