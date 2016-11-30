@@ -36,6 +36,10 @@ h1, h2 {
   font-weight: bold;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
