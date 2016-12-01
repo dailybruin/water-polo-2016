@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Resource style -->
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+
+	<title>UCLA Men's Water Polo 2016 Timeline</title>
+</head>
+
+<body>
+	<header>
+		<h1>UCLA Men's Water Polo 2016 Timeline</h1>
+		<div class="bg-img"></div>
+	</header>
+
+	<section id="cd-timeline" class="cd-container" data-bind="foreach: events">
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img id="icon-image" data-bind="attr: {src: gsx$iconphoto.$t}" alt="Picture">
+			</div>
+			<!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<a data-bind="attr: { href: gsx$link.$t }"><h2 data-bind="text: gsx$headline.$t"></h2></a>
+				<a data-bind="attr: { href: gsx$link.$t }"><img data-bind="attr: {src: gsx$photo.$t}" class="fade"></a>
+				<p data-bind="text: gsx$photocaption.$t"></p>
+				<span class="cd-date"><span data-bind="text: title.$t"></span></span>
+			</div>
+			<!-- cd-timeline-content -->
+		</div>
+		<!-- cd-timeline-block -->
+
+	</section>
+	<!-- cd-timeline -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+	<script src="js/data.js"></script>
+	<!-- Google Spreadsheets data -->
+	<!-- Resource jQuery -->
+</body>
+
+</html>
