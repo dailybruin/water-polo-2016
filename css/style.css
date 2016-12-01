@@ -189,6 +189,7 @@ header h1 {
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
+  -webkit-filter: invert(100%);
 }
 .cd-timeline-img.cd-picture {
   background: #2d89ef;
