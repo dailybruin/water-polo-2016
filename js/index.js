@@ -1,29 +1,16 @@
 (function() {
-
-  
-  
-  var eightTeams = {
+  var finalFour = {
     teams : [
-      ["Team 1",  "Team 2" ],
-      ["Team 3",  "Team 4" ],
-      ["Team 5",  "Team 6" ],
-      ["Team 7",  "Team 8" ]
+      ["USC", "Harvard"], 
+      ["UCLA", "Cal"] 
     ],
-    results : [[ /* WINNER BRACKET */
-      [[1,2], [3,4], [5,6], [7,8]],
-      [[9,1], [8,2]],
-      [[1,3]]
-    ], [         /* LOSER BRACKET */
-      [[5,1], [1,2], [3,2], [6,9]],
-      [[1,2], [3,1]],
-      [[4,2]]
-    ]]
+    results : [
+      // [[1,1], [1,1]]      
+    ]
   }
    
-
   $('div#bracket').bracket({
-    skipGrandFinalComeback: true,
-    init: eightTeams})
+    init: finalFour /* data to initialize the bracket with */ })
 
   initScoutingReport();
 
