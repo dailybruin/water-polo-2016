@@ -29,6 +29,20 @@ p, h3, h2 {
 	margin: 0;
 }
 
+#back {
+	padding: 10px;
+	font-size: 0.8em;
+	background: white;
+	color: black;
+	width: 100px;
+	height: 32px;
+	text-align: center;
+	text-decoration: none;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
 .content-wrapper {
 	.subheading {
 		margin: 15px 0;
