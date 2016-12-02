@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "fluffy.js": "^2.1.1",
+    "jquery-bracket": "^0.11.0"
+  }
 }
