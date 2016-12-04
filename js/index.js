@@ -10,6 +10,7 @@
   }
 
   $('div#bracket').bracket({
+    skipConsolationRound: true,
     init: finalFour /* data to initialize the bracket with */ })
 
   initScoutingReport();
