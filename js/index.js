@@ -1,14 +1,14 @@
 (function() {
   var finalFour = {
     teams : [
-      ["USC", "Harvard"], 
-      ["UCLA", "Cal"] 
+      ["USC", "Harvard"],
+      ["UCLA", "Cal"]
     ],
     results : [
-      // [[1,1], [1,1]]      
+      [[19,4], [8,9]]
     ]
   }
-   
+
   $('div#bracket').bracket({
     init: finalFour /* data to initialize the bracket with */ })
 
@@ -26,7 +26,7 @@ function initScoutingReport() {
 	Array.prototype.slice.apply(active.parentNode.children).map(function(n) {
 		if (n.classList.contains('info')) {
 			description.innerHTML = n.innerHTML;
-			return; 
+			return;
 		}
 	});
 
@@ -46,13 +46,13 @@ function initScoutingReport() {
 				Array.prototype.slice.apply(t.parentNode.children).map(function(n) {
 					if (n.classList.contains('info')) {
 						description.innerHTML = n.innerHTML;
-						return; 
+						return;
 					}
 				});
 				return;
 			}
 
-			t = t.parentNode; 
+			t = t.parentNode;
 		}
 	});
 
